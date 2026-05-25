@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/formPageStandard.css">
+    <link rel="stylesheet" href="/stylesheets/colors.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/validation.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/inputContainers.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/header.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/buttons.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/scrollbar.css">
+    <link rel="icon" href="/images/logo.jpg">
+    <title>E-Learn Registrati</title>
+</head>
+<body>
+
+<header>
+<span class="header_container">
+        <img class="logo" src="/images/logo.jpg" alt="logo">
+        <h1 class="header_title">E-LEARN</h1>
+    </span>
+</header>
+
+<form id="form" action="/register" method="post" autocomplete="off">
+    <fieldset>
+        <legend class="title">Registrazione</legend>
+
+        <div class="input_container">
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+            <p class="err" id="err_nome"></p>
+        </div>
+        <div class="input_container">
+            <input type="text" id="cognome" name="cognome" placeholder="Cognome">
+            <p class="err" id="err_cognome"></p>
+        </div>
+        <div class="input_container">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <p class="err" id="err_username"></p>
+        </div>
+        <div class="input_container">
+            <input type="text" id="email" name="email" autocomplete="off" placeholder="Email">
+            <p class="err" id="err_email"></p>
+        </div>
+        <div class="input_container">
+            <input type="password" id="password" name="password" autocomplete="new-password" placeholder="Password">
+            <p class="err" id="err_pass"></p>
+        </div>
+        <div class="input_container">
+            <input type="password" id="passwordC" name="passwordC" autocomplete="new-password"
+                   placeholder="Conferma password">
+            <p class="err" id="err_conf"></p>
+        </div>
+        <input class="blueBtn" type="submit" value="Procedi"><br>
+        <a href="/login" class="redirect_log_reg">Hai già un account? Login!</a>
+    </fieldset>
+</form>
+
+<script type="module" src="/javascripts/register_errors_display.js"></script>
+</body>
+</html>

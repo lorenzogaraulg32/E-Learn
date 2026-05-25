@@ -1,0 +1,86 @@
+.upload_section.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+.upload_section{
+    display: none;
+}
+
+.upload_course,
+.upload_course_info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.upload_course{
+    margin: 0;
+    border-bottom: 3px solid var(--primary-color-darker);
+    background-image: linear-gradient(var(--light-gray), var(--white-color));
+}
+
+.upload_course_p {
+    max-width: 700px;
+    padding: 10px;
+    font-size: 1.8rem;
+    color: var(--constrast-color-outline);
+    margin-left: 90px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.upload_course_btn {
+    width: 250px;
+    min-width: 150px;
+    height: 80px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 1em;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    margin-right: 100px;
+    transition-duration: 0.4s;
+}
+
+.upload_course_btn:hover {
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.upload_course_info {
+    flex-direction: column;
+}
+
+.upload_course_info h2 {
+    padding: 20px;
+    color: darkred;
+}
+
+.info_lesson {
+    max-width: 1100px;
+    font-size: 1.4rem;
+    padding: 10px;
+    color: var(--primary-color);
+    margin: 20px;
+}
+
+.vl {
+    height: 100%;
+    border-left: 5px solid var(--constrast-color-outline);
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background-color: var(--constrast-color-outline);
+}

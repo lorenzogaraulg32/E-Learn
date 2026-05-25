@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/coursePage.css">
+    <link rel="stylesheet" href="/stylesheets/colors.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/scrollbar.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/buttons.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/Sidebar&userHeader.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/inputContainers.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/validation.css">
+    <link rel="stylesheet" href="/stylesheets/modCoursesPage.css">
+    <link rel="icon" href="/images/logo.jpg">
+    <title>Modifica Corsi</title>
+</head>
+<body>
+<div class="alert" id="alert">
+
+    <div class="alert_text_container">
+        <h3>SEI SICURO DI VOLER ELIMINARE?</h3>
+        <h4>Il materiale non sarà più recuperabile</h4>
+    </div>
+    <div class="alert_btn_container">
+        <button class="redBtn" id="continue_delete">Elimina</button>
+        <button class="redBtn" id="abort_delete">Annulla</button>
+    </div>
+</div>
+<div class="info_wrapper" id="info_wrapper">
+    <div class="sidebar">
+        <h2 id="sidebar_title">MODIFICA CORSI</h2>
+        <ul>
+        </ul>
+    </div>
+
+    <div class="info_section">
+        <h1 class="user_name" id="user_name"></h1>
+        <button class="whiteBtn" id="logout">Logout</button>
+    </div>
+</div>
+<div class="main_section" id="main_section">
+
+    <h2 class="no_course_selected" id="no_course_selected">Se si conferma una modifica a un campo ma questo è vuoto le
+        modifiche di quel campo non verranno salvate</h2>
+
+    <div class="course_info_container">
+        <h3 class="course_name" id="course_name"></h3>
+        <div class="input_container" id="course_name_input_container">
+            <input type="text" id="course_name_i" name="course_name" autocomplete="off"
+                   placeholder="Nome del corso">
+            <p class="length" id="length_course_name"></p>
+            <p class="err" id="err_course_name"></p>
+        </div>
+        <h3 class="course_professor" id="course_professor"></h3>
+        <h3 class="course_n_lessons" id="course_n_lessons"></h3>
+        <button class="redBtn" id="delete_course">ELIMINA CORSO
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
+                 viewBox="0 0 16 16">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+            </svg>
+        </button>
+    </div>
+    <hr id="divider0">
+    <div id="mod_course_section">
+        <div class="input_container">
+                    <textarea id="course_desc_i" name="course_description" placeholder="Descrizione del corso"
+                              rows="9" maxlength="600"></textarea>
+            <p class="length" id="length_course_desc"></p>
+            <p class="err" id="err_course_desc"></p>
+        </div>
+        <div class="input_container">
+            <label for="category" class="cat_label">Scegli la categoria</label>
+            <select name="category" id="category">
+                <option value="none"></option>
+                <option value="informatica">Informatica</option>
+                <option value="matematica">Matematica</option>
+                <option value="chimica">Chimica</option>
+                <option value="cucina">Cucina</option>
+                <option value="economia">Economia</option>
+            </select>
+            <p class="err" id="err_course_category"></p>
+        </div>
+        <div class="input_container">
+            <input id="course_price" name="course_price" placeholder="Prezzo">
+            <p class="err" id="err_course_price"></p>
+        </div>
+        <button class="blueBtn" id="course_mod_conf">Conferma modifiche</button>
+        <a id="annulla_course" class="annulla">Annulla</a>
+    </div>
+    <div class="lesson_section">
+        <ul class="lessons" id="lessons">
+        </ul>
+    </div>
+    <button class="greenBtn" id="add_new_lesson">Aggiungi una lezione</button>
+</div>
+<script type="module" src="/javascripts/modCoursesPage.js"></script>
+
+</body>
+</html>

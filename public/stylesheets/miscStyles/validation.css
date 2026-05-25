@@ -1,0 +1,16 @@
+.err{
+    display: none;
+    color: var(--red-err-color);
+    margin:15px;
+    padding: 0;
+    text-align: left;
+}
+.err.active{
+    display: block;
+}
+
+.input_container.failure input,
+.input_container.failure textarea {
+    border-color: var(--red-err-color);
+    margin-bottom: 0;
+}

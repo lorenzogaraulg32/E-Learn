@@ -1,0 +1,116 @@
+.profile_section.active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_section {
+    display: none;
+}
+
+.email_container,
+.password_container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_user_info {
+    display: flex;
+    align-items: center;
+    border: 5px solid var(--constrast-color-outline);
+    background-image: url('/images/profilebck.jpg');
+    background-color: var(--multiply-gray);
+    background-blend-mode: multiply;
+    background-position: center;
+    border-radius: 50px;
+    margin: 50px;
+}
+
+.credential_user_info {
+    height: 200px;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: 5px solid var(--constrast-color-outline);
+    background-image: url('/images/profilebck.jpg');
+    background-color: var(--multiply-gray);
+    background-blend-mode: multiply;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.pic_wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 50px 40px 40px 2vw;
+}
+
+.profile_pic {
+    position: relative;
+    display: block;
+    height: 12vw;
+    width: 12vw;
+    border: 3px solid var(--constrast-color-outline);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.pic_wrapper:hover .profile_pic {
+    filter: brightness(0.8);
+}
+
+.change_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pic_wrapper:hover .change_img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.info_section h3 {
+    margin-top: 10px;
+    color: var(--white-color);
+    font-weight: bolder;
+}
+
+.info_section h1 {
+    color: var(--white-color);
+    font-weight: bolder;
+}
+
+.email_container h2 {
+    color: var(--white-color);
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.password_container h3 {
+    color: var(--white-color);
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.email_container a,
+.password_container a {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.email_container a:hover,
+.password_container a:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}

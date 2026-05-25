@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/colors.css">
+    <link rel="stylesheet" href="/stylesheets/uploadCoursePage.css">
+    <link rel="stylesheet" href="/stylesheets/buyPage.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/validation.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/header.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/inputContainers.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/buttons.css">
+    <link rel="icon" href="/images/logo.jpg">
+    <title>E-Learn</title>
+</head>
+<body>
+<header>
+    <span class="header_container">
+        <img class="logo" src="/images/logo.jpg" alt="logo">
+        <h1 class="header_title">E-LEARN</h1>
+    </span>
+</header>
+<form id="form" action="/buy" method="post" autocomplete="off">
+    <fieldset>
+        <legend class="title">Compra un corso</legend>
+        <div class="column_container">
+            <div class="column1">
+                <h2 id="course_name"></h2>
+                <h2 id="course_prof"></h2>
+                <h2 id="course_lessons"></h2>
+                <h1 id="course_price"></h1>
+
+                <input class="blueBtn" type="submit" value="Compra">
+            </div>
+
+            <div class="column2" id="column2">
+                <h1 class="card_title">Dati Carta</h1>
+                <div class="input_container">
+                    <input type="text" id="card_name" name="card_name" autocomplete="off"
+                           placeholder="Nome e Cognome (es. Mario Rossi)">
+                    <p class="err" id="err_card_name"></p>
+                </div>
+                <div class="input_container">
+                    <input type="text" id="card_number" name="card_number" autocomplete="off"
+                           placeholder="0000-0000-0000-0000" maxlength="19">
+                    <p class="err" id="err_card_number"></p>
+                </div>
+
+                <div class="same_line_inputs">
+                    <div class="input_container">
+                        <input type="month" id="card_exp_date" name="card_exp_date" autocomplete="off">
+                        <p class="err" id="err_card_exp_date"></p>
+                    </div>
+                    <div class="input_container">
+                        <input type="text" id="card_cvv" name="card_cvv" autocomplete="off"
+                           placeholder="CVV" maxlength="3">
+                        <p class="err" id="err_card_cvv"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+<script type="module" src="/javascripts/buyPage.js"></script>
+
+</body>
+</html>

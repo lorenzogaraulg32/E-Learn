@@ -1,0 +1,52 @@
+body{
+    display: block;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, var(--gradient-end-color),var(--third-color))
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+fieldset{
+    text-align: center;
+    padding: 20px 80px;
+    margin: 5rem 0;
+    border: 3px solid var(--primary-color);
+    background-color: var(--white-color);
+    border-radius: 5px;
+}
+
+.input_container input{
+    width: 400px;
+    padding: 15px 15px 15px 15px;
+    margin: 10px auto;
+}
+
+.title{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.redirect_log_reg {
+    color: blue;
+    text-decoration: underline;
+}
+
+.redirect_log_reg:hover{
+    cursor: pointer;
+}

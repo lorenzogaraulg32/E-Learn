@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/coursePage.css">
+    <link rel="stylesheet" href="/stylesheets/colors.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/scrollbar.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/buttons.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/Sidebar&userHeader.css">
+    <link rel="icon" href="/images/logo.jpg">
+    <title>E-Learn</title>
+</head>
+<body>
+<div class="info_wrapper">
+    <div class="sidebar">
+        <h2 id="sidebar_title">I TUOI CORSI</h2>
+        <ul>
+        </ul>
+    </div>
+
+    <div class="info_section">
+        <h1 class="user_name" id="user_name"></h1>
+        <button class="whiteBtn" id="logout">Logout</button>
+    </div>
+</div>
+<div class="main_section">
+
+    <h2 class="no_course_selected" id="no_course_selected">Seleziona un corso per visualizzare le sue lezioni...</h2>
+
+    <div class="course_info_container">
+        <h3 class="course_name" id="course_name"></h3>
+        <h3 class="course_professor" id="course_professor"></h3>
+        <h3 class="course_n_lessons" id="course_n_lessons"></h3>
+        <a class="prof_profile" >Vai al profilo del professore</a>
+    </div>
+    <hr id="divider0">
+    <div class="lesson_section">
+        <ul class="lessons" id="lessons">
+            <p class="course_desc" id="course_desc"></p>
+        </ul>
+    </div>
+
+
+</div>
+<script type="module" src="/javascripts/coursePage.js"></script>
+</body>
+</html>

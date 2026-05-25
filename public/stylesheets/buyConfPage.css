@@ -1,0 +1,27 @@
+body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+}
+
+img{
+
+    user-select: none;
+}
+
+h1{
+    color: var(--success-color);
+}
+
+h2{
+    color: var(--primary-color);
+}
+
+.blueBtn{
+    width: 200px;
+    height: 100px;
+}

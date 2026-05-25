@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/scrollbar.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/buttons.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/validation.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/header.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/inputContainers.css">
+    <link rel="stylesheet" href="/stylesheets/uploadCoursePage.css">
+    <link rel="stylesheet" href="/stylesheets/colors.css">
+    <link rel="icon" href="/images/logo.jpg">
+    <title>E-Learn Accesso</title>
+</head>
+<body>
+
+<header>
+    <span class="header_container">
+        <h1 class="header_title">Creazione corso</h1>
+    </span>
+</header>
+
+<form id="form" action="/createCourse" method="post" autocomplete="off" enctype="multipart/form-data">
+    <fieldset>
+        <legend class="title">Dati del corso</legend>
+        <div class="column_container">
+            <div class="column1">
+                <div class="input_container">
+                    <input type="text" id="course_name" name="course_name" autocomplete="off"
+                           placeholder="Nome del corso">
+                    <p class="length" id="length_course_name"></p>
+                    <p class="err" id="err_course_name"></p>
+
+                </div>
+                <div class="input_container">
+                    <textarea id="course_description" name="course_description" placeholder="Descrizione del corso"
+                              rows="9" maxlength="600"></textarea>
+                    <p class="length" id="length_course_desc"></p>
+                    <p class="err" id="err_course_desc"></p>
+                </div>
+
+                <div class="input_container">
+                    <label for="category" class="cat_label">Scegli la categoria</label>
+                    <select name="category" id="category">
+                        <option value="none"></option>
+                        <option value="informatica">Informatica</option>
+                        <option value="matematica">Matematica</option>
+                        <option value="chimica">Chimica</option>
+                        <option value="cucina">Cucina</option>
+                        <option value="economia">Economia</option>
+                    </select>
+                    <p class="err" id="err_course_category"></p>
+                </div>
+                <div class="input_container">
+                    <input id="course_price" name="course_price" placeholder="Prezzo">
+                    <p class="err" id="err_course_price"></p>
+                </div>
+                <input class="blueBtn" type="submit" value="Carica Corso">
+                <p class = 'info'>Puoi caricare un massimo di 10 lezioni per corso, ognuna delle quali deve avere un pdf e un video in formato .mp4.
+                È possibile aggiungere più lezioni e rimuovere l'ultima lezione aggiunta, quindi si consiglia di andare in ordine onde evitare di dover ripetere alcune procedure</p>
+            </div>
+
+            <div class="column2" id="column2">
+                <div class="lesson_header_container" id="lesson_header_container1">
+                    <h2 class="lesson_number">Lezione 1</h2>
+                </div>
+                <div class="input_container" id="input_containerLN1">
+                    <input type="text" id="lesson_1_name" name="lesson_1_name" autocomplete="off"
+                           placeholder="Nome Lezione">
+                    <p class="length" id="length_lesson_name_1"></p>
+                    <p class="err"></p>
+                </div>
+                <div class="input_container" id="input_containerLD1">
+                    <textarea id="lesson_1_desc" name="lesson_1_desc" placeholder="Descrizione lezione" rows="6"
+                              maxlength="600"></textarea>
+                    <p class="length" id="length_lesson_desc_1"></p>
+                    <p class="err"></p>
+                </div>
+                <div class="container" id="input_containerLPDF1">
+                    <label for="pdf1" class="file_label">Includi un file pdf</label>
+                    <input type="file" id="pdf1" class="pdf" name="pdf1">
+                    <p class="err"></p>
+                </div>
+                <div class="container" id="input_containerLMP41">
+                    <label for="video1" class="file_label">Includi un video</label>
+                    <input type="file" id="video1" class="video" name="video1">
+                    <p class="err"></p>
+                </div>
+                <div class="add_lesson_container" id="add_lesson_container">
+                    <h2 class="add_lesson">Aggiungi lezione</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-plus-circle-fill2" viewBox="0 0 16 16"
+                         id="addLesson">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </fieldset>
+
+</form>
+<script type="module" src="/javascripts/uploadCourse.js"></script>
+</body>
+</html>

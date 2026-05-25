@@ -1,0 +1,60 @@
+#card_name, #card_number {
+    width: 100%;
+}
+
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.same_line_inputs{
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.same_line_inputs .input_container{
+    width: 40%;
+}
+
+
+h2 {
+    color: var(--primary-color-darker);
+    margin: 20px;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+h1 {
+    margin: 30px 20px 20px;
+    color: var(--primary-color-darker);
+
+}
+
+.card_title{
+    margin: 0;
+}
+.header_title{
+    color: var(--white-color);
+}
+
+.btn {
+    margin-bottom: 20px;
+}

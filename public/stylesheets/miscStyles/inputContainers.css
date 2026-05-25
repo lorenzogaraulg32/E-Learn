@@ -1,0 +1,47 @@
+.input_container input,
+.input_container textarea {
+    display: block;
+    border-radius: 25px;
+    border: 3px solid var( --primary-color);
+    font-size: 18px;
+    background-color: var(--form-bck);
+    color: black;
+    resize: none;
+    font-family: sans-serif;
+}
+
+::placeholder{
+    color: black;
+}
+
+.pdf,
+.video {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.input_container select {
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: black;
+    background-color: var(--form-bck);
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.length{
+    display: none;
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+
+.length.active{
+    display: block;
+}
+

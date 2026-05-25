@@ -1,0 +1,19 @@
+
+:root {
+    --primary-color: #23418b;
+    --primary-color-darker: #031b56;
+    --secondary-color: #47b5c1;
+    --form-bck: #e6eefc;
+    --third-color: #9eedfa;
+    --gradient-end-color: #c5def8;
+    --gradient-end-darker: #8ba3fc;
+    --constrast-color: #c1476a;
+    --constrast-color-outline: #8c1f3f;
+    --success-color: #2ECC71;
+    --light-gray: #D3D3D3;
+    --dark-gray: #333333;
+    --accent-color: #4CAF50;
+    --white-color: #FFFFFF;
+    --red-err-color: #c90000;
+    --multiply-gray: #565555;
+}

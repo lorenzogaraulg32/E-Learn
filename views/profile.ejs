@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <link rel="stylesheet" href="/stylesheets/colors.css">
+    <link rel="stylesheet" href="/stylesheets/profileSections/panoramica.css">
+    <link rel="stylesheet" href="/stylesheets/profileSections/courseSearch.css">
+    <link rel="stylesheet" href="/stylesheets/profileSections/uploadCourse.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/Sidebar&userHeader.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/inputContainers.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/validation.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/buttons.css">
+
+    <link rel="icon" href="/images/logo.jpg">
+    <title>E-Learn</title>
+</head>
+<body>
+<form class="mod_form_email">
+    <h1 class="mod_form_email_title">Modifica EMAIL</h1>
+    <div class="input_container">
+        <input type="text" id="email" name="email" autocomplete="off" placeholder="Email">
+        <p class="err" id="err_email"></p>
+    </div>
+
+    <div class="input_container">
+        <input type="text" id="conf_email" name="conf_email" autocomplete="off" placeholder="Conferma email">
+        <p class="err" id="err_email_conf"></p>
+    </div>
+
+    <div class="mod_form_email_btns">
+        <input type="submit" id='mod_email_btn' class="redBtn" value="Modifica">
+        <button id="annulla_email" class="redBtn">Annulla</button>
+    </div>
+</form>
+<form class="mod_form_password">
+    <h1 class="mod_form_password_title">Modifica PASSWORD</h1>
+    <div class="input_container">
+        <input type="password" id="password" name="password" autocomplete="off" placeholder="Password">
+        <p class="err" id="err_password"></p>
+    </div>
+
+    <div class="input_container">
+        <input type="password" id="conf_password" name="conf_password" autocomplete="off" placeholder="Conferma Password">
+        <p class="err" id="err_conf_password"></p>
+    </div>
+
+    <div class="mod_form_pass_btns">
+        <input type="submit" id='mod_pass_btn' class="redBtn" value="Modifica">
+        <button id="annulla_pass" class="redBtn">Annulla</button>
+    </div>
+</form>
+
+<form class="mod_profile_pick">
+    <div class="container" id="img_container">
+        <label for="profile_img" class="file_label">Scegli una nuova immagine di profilo</label>
+        <input type="file" id="profile_img" class="profile_img_selector" name="profile_img">
+        <p class="err"></p>
+    </div>
+
+    <div class="mod_form_img_btns">
+        <input type="submit" id='mod_img_btn' class="redBtn" value="Modifica">
+        <button id="annulla_img" class="redBtn">Annulla</button>
+    </div>
+</form>
+
+<div class="info_wrapper">
+    <div class="sidebar">
+        <h2>Profilo</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd"
+                                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                    </i>
+                    Panoramica</a>
+            </li>
+            <li>
+                <a href="#">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-journals" viewBox="0 0 16 16">
+                            <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2"/>
+                            <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0"/>
+                        </svg>
+                    </i>
+                    Corsi frequentati
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow"
+                         viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </i>
+                    Cerca un corso</a>
+            </li>
+            <li>
+                <a href="#">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-cloud-upload-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8 0a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 4.095 0 5.555 0 7.318 0 9.366 1.708 11 3.781 11H7.5V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11h4.188C14.502 11 16 9.57 16 7.773c0-1.636-1.242-2.969-2.834-3.194C12.923 1.999 10.69 0 8 0m-.5 14.5V11h1v3.5a.5.5 0 0 1-1 0"/>
+                        </svg>
+                    </i>
+                    Carica un corso</a>
+            </li>
+            <li id="loaded_courses">
+                <a href="#">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                        </svg>
+                    </i>
+                    Gestione corsi caricati
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow"
+                         viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+
+    <div class="info_section">
+        <h1 class="user_name" id="user_name"></h1>
+        <button class="whiteBtn" id="logout">Logout</button>
+    </div>
+</div>
+<div class="main_section" id="main_section">
+    <div class="profile_section">
+        <div class="main_user_info">
+            <div class="pic_wrapper">
+                <img id='profile_pick'  class="profile_pic" src="/images/placeholder.jpg">
+                <h4 class="mod_pick">Modifica avvenuta!</h4>
+            </div>
+            <div class="info_section">
+                <h1></h1>
+                <h3></h3>
+            </div>
+        </div>
+
+        <div class="credential_user_info">
+            <div class="email_container">
+                <h2>Email: placeholder@gmail.com</h2>
+                <a id="mod_email">modifica email</a>
+            </div>
+            <h4 class="mod_email">Modifica avvenuta!</h4>
+            <div class="password_container">
+                <h3>Password : ***** </h3>
+                <a id="mod_password">modifica password</a>
+            </div>
+            <h4 class="mod_pass">Modifica avvenuta!</h4>
+
+
+        </div>
+    </div>
+
+    <div class="search_section">
+        <div class="research_container"><label for="course_search">Cerca un corso a cui iscriverti</label>
+            <div class="search-input"><input class="input_field" type="text" placeholder="Cerca corsi"
+                                             name="course_search" id="course_search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+                     class="bi bi-search" id="search_course_icon">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="result_container">
+            <h1 class="no_search_found">Nessuna ricerca trovata</h1>
+            <ul id="res_list"></ul>
+        </div>
+    </div>
+
+    <div class="upload_section">
+        <div class="upload_course">
+            <p class="upload_course_p">PUBBLICA SUBITO UN CORSO, È FACILE!</p>
+            <button class="upload_course_btn" id="uploadButton">CREA UN CORSO</button>
+        </div>
+        <div class="upload_course_info"><p class="info_lesson">Hai la possibilità di pubblicare subito un tuo corso e
+                metterlo in vendita per chiunque potesse averne bisogno. Con pochi e semplici step potrai subito dare
+                vita a ciò che più ti appassiona e condividerlo con altre persone</p>
+            <hr>
+            <h2>Per farlo è necessaria però una procedura</h2>
+            <hr>
+            <p class="info_lesson">Il tuo corso potrà contenere un massimo di 10 lezioni, e per ciascuna sarà necessario
+                caricare un file.pdf e un video in cui spieghi l'argomento. È molto importante per noi che tutto il
+                materiale pubblicato sia originale e ben strutturato, ci riserviamo quindi la possibilità di revisionare
+                il corso pubblicato e di nasconderlo in caso non rispetti alcuni standard(es. contenuto rubato, video
+                inappropriati ecc..) Invitiamo inoltre a comunicare tramite email (lorenzo.garau.lg33@gmail.com)
+                segnalazioni qualora un corso da voi comprato risulti violare alcune norme</p></div>
+    </div>
+</div>
+<script type="module" src="/javascripts/profile.js"></script>
+</body>
+</html>

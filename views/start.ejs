@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/scrollbar.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/inputContainers.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/header.css">
+    <link rel="stylesheet" href="/stylesheets/miscStyles/buttons.css">
+    <link rel="stylesheet" href="/stylesheets/start.css">
+    <link rel="stylesheet" href="/stylesheets/colors.css">
+    <link rel="icon" href="/images/logo.jpg">
+    <title>E-Learn</title>
+</head>
+<body>
+<header>
+    <span class="header_container">
+        <img class="logo" src="/images/logo.jpg" alt="logo">
+        <h1 class="header_title">E-LEARN</h1>
+    </span>
+    <button class="whiteBtn" id="loginBtn"> Log-in</button>
+</header>
+<div class="container_main">
+    <span class="title_container">
+        <h1 class="main_title">Apprendimento online<br>Oltre i confini della classe.</h1>
+        <img class="big_logo" src="/images/logo.jpg" alt="logo">
+    </span>
+    <button class="blueBtn" id="regBtn"> Inizia Subito</button>
+</div>
+
+<h1 class="cat_title">Categorie Disponibili: </h1>
+<div class="second_section">
+    <ul class="courses">
+        <li class="cat1">Informatica</li>
+        <li class="cat2">Cucina</li>
+        <li class="cat3">Chimica</li>
+        <li class="cat4">Economia</li>
+        <li class="cat5">Matematica</li>
+    </ul>
+    <p class="par1">Questo sito web ti dà la possibilità di guadagnare insegnando,
+        puoi pubblicare dei corsi sotto una data categoria e puoi impostare il prezzo che ti sembra
+        più adeguato. Diventa subito un Professore è semplice</p>
+    <ul class="prof_instruction_ul">
+        <li>
+            <h3>Step 1: Crea un account</h3>
+            <h4>E' semplice, dovrai inserire alcuni dati personali e le credenziali che userai per accedere</h4>
+            <h2>Clicca sul pulsante Inizia Subito!</h2>
+        </li>
+        <li>
+            <h3>Step 2: Entra nel form</h3>
+            <h4>Nel tuo profilo troverai una sezione dedicata alle informazioni su come caricare un corso</h4>
+            <h2>La trovi nella sidebar a sinistra!</h2>
+        </li>
+        <li>
+            <h3>Step 3: Compila il form</h3>
+            <h4>Inserisci le informazioni del tuo corso e delle sue lezioni, puoi inoltre includere una serie di file e
+                video per arricchire l'esperienza</h4>
+        </li>
+    </ul>
+    <div class="search_section">
+        <p class="par2">In alternativa se sei qua per saziare la tua sete di
+            conoscenza sappi che troverai un sacco di corsi utili e interessanti, non aspettare!</p>
+
+        <div class="input_container">
+            <input type="text" id="start_search" name="start_search" placeholder="Cerca Corsi">
+            <button class="blueBtn" id="search_btn">Cerca</button>
+        </div>
+
+        <div class="result_container">
+            <h1 class="no_search_found">Nessuna ricerca trovata</h1>
+            <ul id="res_list"></ul>
+        </div>
+    </div>
+
+</div>
+<script type="module" src="/javascripts/start.js"></script>
+</body>
+</html>

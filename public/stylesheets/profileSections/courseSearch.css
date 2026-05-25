@@ -1,0 +1,111 @@
+.search_section{
+    display: none;
+}
+
+.search_section.active{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+
+.research_container,
+.upload_course,
+.upload_course_info {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+.research_container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.research_container .search-input {
+    margin-left: 30px;
+}
+
+.research_container label {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: var(--constrast-color-outline);
+    font-weight: bold;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: pre-line;
+    font-size: 2rem;
+    padding: 0;
+    border-bottom: 2px solid var(--constrast-color-outline);
+}
+
+.result_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    margin: 50px 20px 20px;
+}
+
+.card_course_search {
+    display: flex;
+    height: 120px;
+    width: 1300px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly ;
+    border: 5px solid var(--constrast-color-outline);
+    background-color: var(--multiply-gray);
+    background-blend-mode: multiply;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+.card_course_search h1 {
+    width: 350px;
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.card_course_search h2 {
+    width: 350px;
+    color: var(--white-color);
+}
+
+
+.card_course_search svg {
+    min-width: 40px;
+    height: 40px;
+    color: var(--white-color);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card_course_search p {
+    width: 400px;
+    max-height: 100px;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: pre-line;
+    padding: 10px;
+}
+
+.no_search_found{
+    display: none;
+    color: var(--constrast-color-outline);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.no_search_found.active{
+    display: block;
+}

@@ -1,0 +1,157 @@
+body {
+    display: block;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, var(--gradient-end-color), var(--third-color));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.title {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    user-select: none;
+    padding: 20px 80px;
+    margin: 2rem 10rem;
+    border: 3px solid var(--primary-color);
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.column_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.column1,
+.column2 {
+    width: 100%;
+}
+
+.column1 {
+    align-items: start;
+}
+
+.column1 .input_container input {
+    margin-top: 30px;
+}
+
+.cat_label{
+    width: 100%;
+    padding-top: 5px;
+}
+
+.info {
+    width: 80%;
+    color: var(--primary-color);
+}
+
+.length {
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.column2 {
+    overflow-x: hidden;
+    padding-left: 20px;
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+.input_container {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#course_price{
+    width: 200px;
+}
+
+.input_container input,
+.input_container textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px 15px 15px 15px;
+}
+
+.container {
+    border-top: 1px solid var(--dark-gray);
+    padding-top: 10px;
+}
+
+.add_lesson_container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 2px solid var(--constrast-color-outline);
+}
+
+.lesson_header_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid var(--constrast-color-outline);
+}
+
+.add_lesson {
+    color: var(--constrast-color-outline);
+    border-radius: 50px;
+    padding: 0 20px
+}
+
+.file_label,
+.cat_label{
+    color: var(--constrast-color-outline);
+    font-weight: bold;
+}
+
+.lesson_number {
+    color: var(--constrast-color-outline);
+    margin-right: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+svg {
+    height: 30px;
+    margin-left: 10px;
+    fill: var(--constrast-color-outline);
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+svg:hover {
+    fill: var(--constrast-color);
+}
+
+
+
